@@ -76,7 +76,6 @@ body {
     font-weight: 600;
 }
 
-
 .btn-primary, .btn-secondary {
     padding: 12px 25px;
     border-radius: 8px;
@@ -114,7 +113,6 @@ body {
 .btn-full {
     width: 100%;
 }
-
 
 .hero {
     background: linear-gradient(to right, #e0f2fe, #f0fdfa);
@@ -164,7 +162,6 @@ body {
     margin-bottom: 10px;
 }
 
-
 .features, .services-preview, .services-main, 
 .medicine-categories, .popular-medicines, 
 .health-tips, .about-content, .values, 
@@ -188,7 +185,6 @@ body {
     font-size: 18px;
     color: #64748b;
 }
-
 
 .features-grid, .services-grid, .categories-grid,
 .medicine-grid, .tips-grid, .values-grid,
@@ -241,6 +237,28 @@ body {
     text-decoration: none;
 }
 
+.stats {
+    background: linear-gradient(to right, #0891b2, #0e7490);
+    color: white;
+    padding: 60px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 18px;
+}
 
 .cta {
     background: linear-gradient(to right, #f0f9ff, #e0f2fe);
@@ -403,7 +421,6 @@ body {
     color: #64748b;
 }
 
-
 .service-detail {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -452,7 +469,6 @@ body {
     font-weight: bold;
     font-size: 20px;
 }
-
 
 .medicine-search {
     padding: 40px 0;
@@ -811,7 +827,6 @@ body {
     text-decoration: none;
 }
 
-
 @media (max-width: 968px) {
     .hero-content, .about-grid, .contact-wrapper {
         grid-template-columns: 1fr;
@@ -876,4 +891,211 @@ body {
     .banner-content {
         flex-direction: column;
     }
+}
+
+#theme-toggle {
+    background: #0891b2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: background 0.3s;
+}
+
+#theme-toggle:hover {
+    background: #0e7490;
+}
+
+body.dark-mode {
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+body.dark-mode .navbar {
+    background: #1e293b;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .logo-text,
+body.dark-mode .nav-link,
+body.dark-mode .section-title,
+body.dark-mode .page-title,
+body.dark-mode .hero-title,
+body.dark-mode .feature-title,
+body.dark-mode .service-title,
+body.dark-mode .category-title,
+body.dark-mode .medicine-name,
+body.dark-mode .tip-title,
+body.dark-mode .value-title,
+body.dark-mode .additional-title,
+body.dark-mode .member-name,
+body.dark-mode .impact-label,
+body.dark-mode .service-detail-title,
+body.dark-mode .form-title,
+body.dark-mode .info-title,
+body.dark-mode .method-title,
+body.dark-mode .hours-title,
+body.dark-mode .faq-question,
+body.dark-mode h1, body.dark-mode h2, 
+body.dark-mode h3, body.dark-mode h4 {
+    color: #e2e8f0;
+}
+
+body.dark-mode .nav-link:hover {
+    background: #334155;
+    color: #06b6d4;
+}
+
+body.dark-mode .hero {
+    background: linear-gradient(to right, #1e293b, #0f172a);
+}
+
+body.dark-mode .features,
+body.dark-mode .services-preview,
+body.dark-mode .about-content,
+body.dark-mode .services-main,
+body.dark-mode .medicine-categories,
+body.dark-mode .health-tips,
+body.dark-mode .values,
+body.dark-mode .team,
+body.dark-mode .contact-section,
+body.dark-mode .faq-section {
+    background: #0f172a;
+}
+
+body.dark-mode .services-preview,
+body.dark-mode .medicine-search,
+body.dark-mode .popular-medicines,
+body.dark-mode .impact,
+body.dark-mode .additional-services,
+body.dark-mode .map-section {
+    background: #1e293b;
+}
+
+body.dark-mode .feature-card,
+body.dark-mode .service-card,
+body.dark-mode .category-card,
+body.dark-mode .medicine-card,
+body.dark-mode .tip-card,
+body.dark-mode .value-card,
+body.dark-mode .team-member,
+body.dark-mode .impact-card,
+body.dark-mode .additional-card,
+body.dark-mode .faq-item,
+body.dark-mode .hero-card,
+body.dark-mode .contact-form-container,
+body.dark-mode .contact-method,
+body.dark-mode .business-hours,
+body.dark-mode .map-overlay {
+    background: #1e293b;
+    color: #e2e8f0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .feature-card:hover,
+body.dark-mode .service-card:hover,
+body.dark-mode .category-card:hover,
+body.dark-mode .medicine-card:hover {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+body.dark-mode .feature-description,
+body.dark-mode .service-description,
+body.dark-mode .category-description,
+body.dark-mode .value-description,
+body.dark-mode .additional-description,
+body.dark-mode .medicine-use,
+body.dark-mode .tip-description,
+body.dark-mode .member-bio,
+body.dark-mode .impact-description,
+body.dark-mode .text-block,
+body.dark-mode .hero-description,
+body.dark-mode .section-description,
+body.dark-mode .page-description,
+body.dark-mode .form-description,
+body.dark-mode .info-description,
+body.dark-mode .method-text,
+body.dark-mode .hours-time,
+body.dark-mode .faq-answer,
+body.dark-mode .banner-description,
+body.dark-mode .cta-description {
+    color: #cbd5e1;
+}
+
+body.dark-mode .footer {
+    background: #020617;
+}
+
+body.dark-mode .cta {
+    background: linear-gradient(to right, #1e293b, #0f172a);
+}
+
+body.dark-mode .cta-title {
+    color: #e2e8f0;
+}
+
+body.dark-mode .form-input,
+body.dark-mode .form-select,
+body.dark-mode .form-textarea,
+body.dark-mode .search-input {
+    background: #334155;
+    color: #e2e8f0;
+    border-color: #475569;
+}
+
+body.dark-mode .form-input:focus,
+body.dark-mode .form-select:focus,
+body.dark-mode .form-textarea:focus,
+body.dark-mode .search-input:focus {
+    border-color: #0891b2;
+}
+
+body.dark-mode .info-tag,
+body.dark-mode .category-count {
+    background: #334155;
+    color: #cbd5e1;
+}
+
+body.dark-mode .hours-item {
+    border-bottom-color: #334155;
+}
+
+body.dark-mode .hours-day {
+    color: #e2e8f0;
+}
+
+body.dark-mode .service-detail-icon {
+    background: linear-gradient(to bottom right, #0891b2, #0e7490);
+}
+
+body.dark-mode .about-card-highlight {
+    background: linear-gradient(to bottom right, #0891b2, #0e7490);
+}
+
+body.dark-mode .map-placeholder {
+    background: linear-gradient(to bottom right, #1e293b, #0f172a);
+}
+
+body.dark-mode .info-banner {
+    background: #422006;
+}
+
+body.dark-mode .banner-title {
+    color: #fbbf24;
+}
+
+body.dark-mode .banner-description {
+    color: #fcd34d;
+}
+
+body.dark-mode .method-subtext,
+body.dark-mode .hours-note {
+    color: #94a3b8;
+}
+
+body.dark-mode .service-detail-description {
+    color: #cbd5e1;
 }
